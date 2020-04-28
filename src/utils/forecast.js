@@ -11,7 +11,7 @@ const forecast = (lat,long, callback) => {
         } else {
             callback(undefined, [
                 'Location is ' + data.location.name + ', ' + data.location.country,
-                'It is currently ' + data.current.temperature + ' degrees out at ' + data.location.name + '. It feels like ' + data.current.feelslike + ' degress.'
+                'It is currently ' + data.current.temperature + ' degrees out at ' + data.location.name + '. It feels like ' + data.current.feelslike + ' degress. Humidity is ' + data.current.humidity + '%!'
             ]);
         }
     });
